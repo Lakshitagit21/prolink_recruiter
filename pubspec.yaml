@@ -1,0 +1,73 @@
+name: prolink_recruiter
+description: "A new Flutter project."
+# The following line prevents the package from being accidentally published to
+# pub.dev using `flutter pub publish`. This is preferred for private packages.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.6.0
+
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # The following adds the Cupertino Icons font to your application.
+  # Use with the CupertinoIcons class for iOS style icons.
+  cupertino_icons: ^1.0.8
+
+  # Firebase Core Modules
+  firebase_core:
+  firebase_auth:
+  cloud_firestore:
+  firebase_storage:
+  cloud_functions:
+
+  # State Management
+  provider:
+
+  # Utility & Essentials
+  intl:
+  image_picker:
+  flutter_easyloading:
+  go_router:
+  cached_network_image:
+  connectivity_plus:
+  fl_chart:
+  url_launcher:
+
+  # Freezed & JSON
+  freezed_annotation: ^2.4.1
+  json_annotation: ^4.9.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+  # Code Generation
+  build_runner: ^2.4.7
+  freezed: ^2.4.7
+  json_serializable: ^6.7.1
+  flutter_native_splash: ^2.3.10
+  flutter_launcher_icons: ^0.13.1
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "lib/icons/app_icon.png"
+  remove_alpha_ios: true
+
+
+flutter:
+  uses-material-design: true
+  assets:
+    - lib/icons/
+
+flutter_native_splash:
+  color: "#ffffff" # background color
+  image: lib/icons/splash_logo.png # your logo/image
+  android: true
+  ios: true
